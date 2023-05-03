@@ -17,6 +17,7 @@ with st.container():
 	st.title("🥇Top 10s")
 	st.write("Top ten track sections for various metrics")
 
+st.write("---")
 col1,col2 = st.columns(2)
 year = col1.selectbox("Select a year", years)
 month = col2.selectbox("Select a month", months)
@@ -27,7 +28,7 @@ select_options = ["Vehicle occupancy (monthly average)", "Vehicle occupancy (mor
 col1, col2 = st.columns(2)
 metric_type = col1.selectbox("Select a metric", ["Vehicle occupancy", "Passager load"])
 time_period = col2.selectbox("Select a time period", ["Monthly average", "Morning peak hour", "Evening peak hour"])
-
+st.write("---")
 metric = metric_type + time_period
 
 datasets = importing_data(year,month)
