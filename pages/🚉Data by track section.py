@@ -57,6 +57,9 @@ st.write("---")
 col1,col2 = st.columns(2)
 year = col1.selectbox("Select a year", years)
 month = col2.selectbox("Select a month", months)
+
+col1,col2 = st.columns(2)
+
 A = col1.selectbox("Select station A", sorted(df["A"].unique()))
 
 for i in range(len(df[df["A"] == A]["B"])):
@@ -66,6 +69,7 @@ for i in range(len(df[df["B"] == A]["A"])):
     B_list.append(df[df["B"] == A]["A"].iloc[i])
 
 B = col2. selectbox("Select station B", sorted(B_list))
+
 st.write("---")
 
 dataset_list = importing_data(year,month)
