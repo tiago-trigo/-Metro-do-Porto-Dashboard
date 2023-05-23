@@ -15,7 +15,7 @@ with st.expander("What does this dashboard represent?"):
         """
         - This Dashboard showcases the perfomance and operational indicators of **Porto's Light Rail System**.
         
-        - The objective of such data visualizations is to make the not so organized data **acessible to everyone**, even those with less data knowledge.
+        - The objective of such data visualizations is to make the data **acessible to everyone**, even those with less data knowledge.
         """
     )
 
